@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar starts -->
+    <section class="header">
+      <nav>
+        <a href=""><img src="./Images/sailee_logo.png" alt="" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+              <a href="#">Home <i class="fas fa-arrow-down-s-line"></i></a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Sailee International School</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit et
+          sequi, incidunt ea hic ut itaque minima natus, aspernatur obcaecati
+          quasi quia non Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Optio, ab?.
+        </p>
+      </div>
+    </section>
+
+    <!-- course -->
+    <section class="course">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum</span
+        >
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Sailee Radiant School</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            iure laudantium repellat odit eveniet. Cupiditate pariatur odio
+            iste. Esse, molestiae repellendus voluptas explicabo doloribus
+            repudiandae ipsam dolorum beatae minus illum aspernatur quisquam
+            iste et nam facilis, at corrupti quo tenetur distinctio sint
+            possimus. Quia assumenda deleniti nostrum, provident pariatur
+            soluta?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Sailee International School</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            iure laudantium repellat odit eveniet. Cupiditate pariatur odio
+            iste. Esse, molestiae repellendus voluptas explicabo doloribus
+            repudiandae ipsam dolorum beatae minus illum aspernatur quisquam
+            iste et nam facilis, at corrupti quo tenetur distinctio sint
+            possimus. Quia assumenda deleniti nostrum, provident pariatur
+            soluta?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Sailee JR.college</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            iure laudantium repellat odit eveniet. Cupiditate pariatur odio
+            iste. Esse, molestiae repellendus voluptas explicabo doloribus
+            repudiandae ipsam dolorum beatae minus illum aspernatur quisquam
+            iste et nam facilis, at corrupti quo tenetur distinctio sint
+            possimus. Quia assumenda deleniti nostrum, provident pariatur
+            soluta?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cloud-image">
+      <div class="container">
+        <img src="./Images/banner3.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="degree">
+      <div class="row">
+        <div class="degree-col">
+          <h3>NIOS</h3>
+          <img src="./Images/NIOS.png" width="100%" height="70%" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            suscipit at dolorem rem veritatis inventore voluptatem sequi
+            corrupti cum cumque officiis, ut, ipsam, cupiditate voluptas ipsum.
+            Distinctio eligendi adipisci sit reprehenderit velit culpa sunt
+            laudantium. Magnam sunt qui, quas at nemo exercitationem quae dolore
+          </p>
+        </div>
+        <div class="degree-col">
+          <h3>YCMOU</h3>
+          <img src="./Images/ycmou.png" width="100%" height="70%" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            suscipit at dolorem rem veritatis inventore voluptatem sequi
+            corrupti cum cumque officiis, ut, ipsam, cupiditate voluptas ipsum.
+            Distinctio eligendi adipisci sit reprehenderit velit culpa sunt
+            laudantium. Magnam sunt qui, quas at nemo exercitationem quae dolore
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      let navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
