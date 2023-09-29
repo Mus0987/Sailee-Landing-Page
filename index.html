@@ -9,6 +9,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
 
   <body>
@@ -20,10 +27,7 @@
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#">Home</a></li>
-
-            <li>
-              <a href="#">Home <i class="fas fa-arrow-down-s-line"></i></a>
-            </li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Home</a></li>
           </ul>
@@ -41,6 +45,7 @@
         </p>
       </div>
     </section>
+    <!-- navbar ends -->
 
     <!-- course -->
     <section class="course">
@@ -91,39 +96,95 @@
         </div>
       </div>
     </section>
+    <!-- course ends -->
 
-    <section class="cloud-image">
-      <div class="container">
-        <img src="./Images/banner3.jpg" alt="" />
+    <!------------------ Notice Board starts ------------------------->
+    <section class="notice">
+      <div class="container-notice">
+        <div class="notice-left">
+          <h1>Notice Board</h1>
+          <p class="typing-text"></p>
+        </div>
+        <div class="notice-right">
+          <article class="board">
+            <i class="fas fa-code"></i>
+            <h5>Admission</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,Lorem
+              ipsum dolor sit.
+            </p>
+          </article>
+
+          <article class="board">
+            <i class="fa-solid fa-earth-americas"></i>
+            <h5>MBA</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, at!
+              Lorem, ipsum dolor.
+            </p>
+          </article>
+
+          <article class="board">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h5>IIT Bombay Course</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, at!
+              Lorem, ipsum dolor.
+            </p>
+          </article>
+          <article class="board">
+            <i class="fas fa-pen-to-square"></i>
+            <h5>Result</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, at!
+              Lorem, ipsum dolor.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
+    <!---------------- --notice Board ends ------------------------------->
 
-    <section class="degree">
+    <!---------------- --Facilties Starts ------------------------------->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
       <div class="row">
-        <div class="degree-col">
-          <h3>NIOS</h3>
-          <img src="./Images/NIOS.png" width="100%" height="70%" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            suscipit at dolorem rem veritatis inventore voluptatem sequi
-            corrupti cum cumque officiis, ut, ipsam, cupiditate voluptas ipsum.
-            Distinctio eligendi adipisci sit reprehenderit velit culpa sunt
-            laudantium. Magnam sunt qui, quas at nemo exercitationem quae dolore
-          </p>
+        <div class="facilities-col">
+          <img src="/Images/fac5.jpg" alt="" />
+          <div class="layer">
+            <h3>
+              Library
+              <p>Lorem ipsum dolor sit. Lorem, ipsum.</p>
+            </h3>
+          </div>
         </div>
-        <div class="degree-col">
-          <h3>YCMOU</h3>
-          <img src="./Images/ycmou.png" width="100%" height="70%" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            suscipit at dolorem rem veritatis inventore voluptatem sequi
-            corrupti cum cumque officiis, ut, ipsam, cupiditate voluptas ipsum.
-            Distinctio eligendi adipisci sit reprehenderit velit culpa sunt
-            laudantium. Magnam sunt qui, quas at nemo exercitationem quae dolore
-          </p>
+
+        <div class="facilities-col">
+          <img src="/Images/Faci2.jpg" alt="" />
+          <div class="layer">
+            <h3>
+              Hall
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </h3>
+          </div>
+        </div>
+
+        <div class="facilities-col">
+          <img src="/Images/fac6.jpg" alt="" />
+          <div class="layer">
+            <h3>
+              Science Lab
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </h3>
+          </div>
         </div>
       </div>
     </section>
+    <!---------------- --Facilities Ends------------------------------->
+
     <script>
       let navLinks = document.getElementById("nav-links");
 
@@ -133,6 +194,22 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+      // var typed = new Typed(".typing-text", {
+      //   String: ["Sailee is the AI for NOis"],
+      //   loop: true,
+      //   typeSpeed: 40,
+      //   backSpeed: 20,
+      //   bacDelay: 500
+      // });
+      var typed = new Typed(".typing-text", {
+        strings: [
+          "Sailee is the Ai for NIOS. Nois is ine if the board like CBSE and ICSE and it COnduct Both Secondary and Senior Secounday level certifacation Examination which is equivalent to state Board ",
+        ],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 500,
+      });
     </script>
   </body>
 </html>
